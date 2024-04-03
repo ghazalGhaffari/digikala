@@ -1,0 +1,323 @@
+/* fonts */
+@font-face {
+    font-family: "Vazir Bold";
+    src: url(../assets/fonts/font/Vazir-Bold.ttf), 
+    url(../assets/fonts/font/Vazir-Bold.woff), 
+    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Medium";
+    src: url(../assets/fonts/font/Vazir-Medium.ttf),
+    url(../assets/fonts/font/Vazir-Medium.woff), 
+    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Light";
+    src: url(../assets/fonts/font/Vazir-Light.ttf), 
+    url(../assets/fonts/font/Vazir-Light.woff), 
+    url(../assets/fonts/digits/Vazir-Light-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Light-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Thin";
+    src: url(../assets/fonts/font/Vazir-Thin.ttf), 
+    url(../assets/fonts/font/Vazir-Thin.ttf), 
+    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
+}
+/* colors:
+#404165 nav
+#4d525a bars
+#8e9197 search input
+
+#8f4fa0 story top left
+#d75ea7 story bottom right
+
+#ef394e digi red
+#d32f2f red-discount
+
+#0f0f0f black
+
+#5b5f67 location
+
+#393939 some bottoms/kinda gray
+
+#39ae00 amazing green
+
+#f9bc00 yellow
+
+#29c3d6 moshahede blue
+
+#941b80 digiplus
+
+#007295 digiclub right
+#35a6c8 digiclub left
+
+#a6a9ad grey text
+
+#f0f0f1 email input
+#e0e0e2 submit email
+
+#3c4b6d download app
+
+*/
+html{
+    line-height: 1.5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazir Light";
+    height: 1000px;
+}
+
+/* header & navbar */
+
+.header-img{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-img__mobile{
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* nav top */
+.nav{
+    border-bottom: 1px solid #c0c0c0;
+    box-shadow: 0px 1px 5px -2px #c0c0c0;
+    padding: 0 1rem;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+.ntop-right{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.right-logo{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.search{
+    background-color: #f0f0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+}
+.search-icon{
+    background-color: transparent;
+    width: 1.5rem;
+    padding-left: 0.8rem;
+}
+.search-input{
+    border: none;
+    background-color: transparent;
+    font-family: "Vazir Light";
+    display: inline-block;
+    width: 100%;
+    outline: none;
+}
+.search-mobile{
+    background-color: #f0f0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.search-img{
+    aspect-ratio: 4.8;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.register{
+    border: 1px solid #c0c0c0;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+    cursor: pointer;
+}
+.register-icon{
+    width: 1.5rem;
+    padding-left: 0.3rem;
+}
+.register-btn{
+    text-decoration: none;
+    color: #0c0c0c;
+    font-family: "Vazir Medium";
+    font-size: 0.8rem;
+}
+.shop{
+    text-decoration: none;
+    display: inline-block;
+}
+.shop-icon{
+    margin: 0.5rem 0 0;
+    width: 1.5rem;
+    border-right: 1px solid #c0c0c0;
+    padding: 0 1.5rem 0 0.5rem;
+}
+/* nav bottom */
+.nav-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+.menu-category{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.menu-category:hover{
+    border-bottom: 1px solid #ef394e;
+    
+}
+.bars, .item-icon{
+    width: 1rem;
+}
+.menu-title{
+    color: #0f0f0f;
+    font-family: "Vazir Medium";
+    font-size: 0.8rem;
+}
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    padding: 0 1rem;
+    height: 100%;
+}
+.menu-item{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    height: 100%;
+}
+.menu-item:hover{
+    border-bottom: 2px solid #ef394e;
+}
+.item-link{
+    text-decoration: none;
+    display: inline-block;
+    color: #424242;
+}
+.menu-items2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    padding: 0;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.location-icon{
+    width: 1rem;
+}
+.location-text{
+    color: #0f0f0f;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:1100px) {
+    /* nav top */
+    .header-img{
+        display: none;
+    }
+    .header-img__mobile{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-left, .ntop-right, .search{
+        display: none;
+    }
+    .nav-top{
+        position: -webkit-sticky;
+        top: 0;
+    }
+    .search-mobile{
+        background-color: #f0f0f1;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        width: 40rem;
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0.3rem 0;
+        position: relative;
+    }  
+    .search-img{
+        position: absolute;
+        right: 6.8rem;
+        width: 7rem;
+    }
+
+    /* nav bottom */
+    .nav-bottom{
+        display: none;
+    }
+
+}
+@media (max-width:768px) {
+    
+}
+@media (max-width:576px) {
+    
+}
+@media (max-width:300px) {
+    
+}
