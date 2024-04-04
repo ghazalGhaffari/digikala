@@ -27,6 +27,34 @@
     url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf), 
     url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
 }
+
+/* digits fonts */
+@font-face {
+    font-family: "Vazir Bold Digit";
+    src:
+    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Medium Digit";
+    src: 
+    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Light Digit";
+    src:
+    url(../assets/fonts/digits/Vazir-Light-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Light-FD-WOL.woff);
+}
+@font-face {
+    font-family: "Vazir Thin Digit";
+    src:
+    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf), 
+    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
+}
+
+
 /* colors:
 #404165 nav
 #4d525a bars
@@ -62,7 +90,10 @@
 
 #3c4b6d download app
 
+#fdecf5 span bg-color
+#e55ca7 span color 
 */
+
 html{
     line-height: 1.5;
 }
@@ -71,7 +102,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Vazir Light";
-    height: 1000px;
+    font-size: 0.8rem;
 }
 
 /* header & navbar */
@@ -88,6 +119,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* nav top */
 .nav{
     border-bottom: 1px solid #c0c0c0;
@@ -168,7 +200,6 @@ body {
     text-decoration: none;
     color: #0c0c0c;
     font-family: "Vazir Medium";
-    font-size: 0.8rem;
 }
 .shop{
     text-decoration: none;
@@ -180,6 +211,7 @@ body {
     border-right: 1px solid #c0c0c0;
     padding: 0 1.5rem 0 0.5rem;
 }
+
 /* nav bottom */
 .nav-bottom{
     display: flex;
@@ -208,13 +240,11 @@ body {
 .menu-title{
     color: #0f0f0f;
     font-family: "Vazir Medium";
-    font-size: 0.8rem;
 }
 .menu-items{
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 0.8rem;
     border-right: 1px solid #c0c0c0;
     border-left: 1px solid #c0c0c0;
     padding: 0 1rem;
@@ -233,14 +263,13 @@ body {
 }
 .item-link{
     text-decoration: none;
-    display: inline-block;
+    display: block;
     color: #424242;
 }
 .menu-items2{
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 0.8rem;
     padding: 0;
 }
 .location{
@@ -255,16 +284,90 @@ body {
 }
 .location-text{
     color: #0f0f0f;
-    font-size: 0.8rem;
 }
 
+/* main */
 
+/* swiper-story */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper{
+    margin: 0 4.5rem;
+    padding-top: 1.5rem;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.story-profile {
+  border: 1px solid #8e8e8e;
+  border-radius: 5rem;
+  outline: 2px solid rgb(177, 46, 187);
+  outline-offset: 0.2rem;    
+}
+.time{
+    font-family: "Vazir Medium Digit";
+    background-color: #fdecf5;
+    color: #e55ca7;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    border: 1px solid #fff;
+}
+.story-note{
+    color: #0f0f0f;
+    padding-top: 1rem;
+}
 
+/* swiper-slider */
 
+.slider-link{
+    display: block;
+}
 
-
-
-
+/* options */
+.options-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 4.5rem;
+}
+.option{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.option-link{
+    text-decoration: none;
+    font-family: "Vazir Medium";
+    color: #3c4b6d;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+.option-img{
+    width: 3rem;
+}
+.option .icon{
+    background-color: #f0f0f1;
+    padding: 0.1rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
 
 
 
