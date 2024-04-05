@@ -1,342 +1,467 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digikala</title>
-    <link rel="stylesheet" href="style/app.css">
-    <link rel="shortcut icon" href="./assets/images/footer-img/footerlogo2.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="style/app.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/footer-img/footerlogo2.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <!-- header banner -->
-        <img src="./assets/images/header-img/header-ramezan.gif" class="header-img">
+      <!-- header banner -->
+      <img
+        src="./assets/images/header-img/header-ramezan.gif"
+        class="header-img"
+      />
 
-        <!-- header banner responsive -->
-        <img src="./assets/images/header-img/header-banner.webp" class="header-img__mobile">
+      <!-- header banner responsive -->
+      <img
+        src="./assets/images/header-img/header-banner.webp"
+        class="header-img__mobile"
+      />
 
-        <!-- navbar -->
-        <nav class="nav">
+      <!-- navbar -->
+      <nav class="nav">
+        <!-- nav top -->
+        <div class="nav-top">
+          <!-- logo & search -->
+          <div class="ntop-right">
+            <a href="#"
+              ><img
+                src="./assets/images/header-img/logo.svg"
+                alt="Digikala"
+                class="right-logo"
+            /></a>
+            <div class="search">
+              <img
+                src="./assets/icons/magnifying-glass.svg"
+                class="search-icon"
+              />
+              <input type="text" class="search-input" placeholder="جستجو" />
+            </div>
+          </div>
 
-            <!-- nav top -->
-            <div class="nav-top">
+          <!-- search responsive -->
+          <div class="search-mobile">
+            <img
+              src="./assets/icons/magnifying-glass.svg"
+              class="search-icon"
+            />
+            <input type="text" class="search-input" placeholder=" جستجو در" />
+            <img src="./assets/images/header-img/digi.svg" class="search-img" />
+          </div>
 
-                <!-- logo & search -->
-                <div class="ntop-right">
-                    <a href="#"><img src="./assets/images/header-img/logo.svg" alt="Digikala" class="right-logo"></a>
-                    <div class="search">
-                        <img src="./assets/icons/magnifying-glass.svg" class="search-icon">
-                        <input type="text" class="search-input" placeholder="جستجو">                        
-                    </div>
-                </div>
-
-                <!-- search responsive -->
-                <div class="search-mobile">
-                    <img src="./assets/icons/magnifying-glass.svg" class="search-icon">
-                    <input type="text" class="search-input" placeholder=" جستجو در">
-                    <img src="./assets/images/header-img/digi.svg" class="search-img">                        
-                </div>
-
-                <!-- register & shop -->
-                <div class="nav-left">
-                    <div class="register">
-                        <img src="./assets/icons/sign-in.svg" class="register-icon">
-                        <a href="#" class="register-btn">ورود | ثبت‌نام</a>
-                    </div>
-
-                    <a href="#" class="shop">
-                        <img src="./assets/icons/shopping-cart.svg" class="shop-icon">
-                    </a>
-
-                </div>
+          <!-- register & shop -->
+          <div class="nav-left">
+            <div class="register">
+              <img src="./assets/icons/sign-in.svg" class="register-icon" />
+              <a href="#" class="register-btn">ورود | ثبت‌نام</a>
             </div>
 
-            <!-- nav bottom / menu -->
-            <div class="nav-bottom">
-                <div class="menu">
-                    <div class="menu-category">
-                        <img src="./assets/icons/bars.svg" class="bars">
-                        <p class="menu-title">دسته‌بندی کالاها</p>
+            <a href="#" class="shop">
+              <img src="./assets/icons/shopping-cart.svg" class="shop-icon" />
+            </a>
+          </div>
+        </div>
 
-                        <!-- submenu -->
-                        
-                    </div>
+        <!-- nav bottom / menu -->
+        <div class="nav-bottom">
+          <div class="menu">
+            <div class="menu-category">
+              <img src="./assets/icons/bars.svg" class="bars" />
+              <p class="menu-title">دسته‌بندی کالاها</p>
 
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <img src="./assets/icons/percent.svg" class="item-icon">
-                            <a href="#" class="item-link">شگفت‌انگیزها</a>                                
-                        </li>
-                        <li class="menu-item">
-                            <img src="./assets/icons/shopping-bag.svg" class="item-icon">
-                            <a href="#" class="item-link">سوپرمارکت</a>
-                        </li>
-                        <li class="menu-item">
-                            <img src="./assets/icons/gift-top.svg" class="item-icon">
-                            <a href="#" class="item-link">کارت هدیه</a>
-                        </li>
-                        <li class="menu-item">
-                            <img src="./assets/icons/fire.svg" class="item-icon">
-                            <a href="#" class="item-link">پرفروش‌ترین‌ها</a>
-                        </li>
-                        <li class="menu-item">
-                            <img src="./assets/icons/tag.svg" class="item-icon">
-                            <a href="#" class="item-link">تخفیف‌ها و پیشنهادها</a>
-                        </li>
-                    </ul>
-
-                    <ul class="menu-items2">
-                        <li class="menu-item">
-                            <a href="#" class="item-link">سوالی دارید؟</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="item-link">در دیجی‌کالا بفروشید!</a>
-                        </li>
-                    </ul>                  
-                </div>
-
-                <div class="location">
-                    <img src="./assets/icons/map-pin.svg" class="location-icon">
-                    <p class="location-text">لطفا شهر خود را انتخاب کنید</p>
-                </div>
-
-
+              <!-- submenu -->
             </div>
-        </nav>
+
+            <ul class="menu-items">
+              <li class="menu-item">
+                <img src="./assets/icons/percent.svg" class="item-icon" />
+                <a href="#" class="item-link">شگفت‌انگیزها</a>
+              </li>
+              <li class="menu-item">
+                <img src="./assets/icons/shopping-bag.svg" class="item-icon" />
+                <a href="#" class="item-link">سوپرمارکت</a>
+              </li>
+              <li class="menu-item">
+                <img src="./assets/icons/gift-top.svg" class="item-icon" />
+                <a href="#" class="item-link">کارت هدیه</a>
+              </li>
+              <li class="menu-item">
+                <img src="./assets/icons/fire.svg" class="item-icon" />
+                <a href="#" class="item-link">پرفروش‌ترین‌ها</a>
+              </li>
+              <li class="menu-item">
+                <img src="./assets/icons/tag.svg" class="item-icon" />
+                <a href="#" class="item-link">تخفیف‌ها و پیشنهادها</a>
+              </li>
+            </ul>
+
+            <ul class="menu-items2">
+              <li class="menu-item">
+                <a href="#" class="item-link">سوالی دارید؟</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="item-link">در دیجی‌کالا بفروشید!</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="location">
+            <img src="./assets/icons/map-pin.svg" class="location-icon" />
+            <p class="location-text">لطفا شهر خود را انتخاب کنید</p>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-        <!-- swiper / story -->
-        <div class="swiper story">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(1).jpg" class="story-profile">
-                    <span class="time"> 14:00 </span>
-                    <div class="story-note">مشاوره خرید کالای الکترونیک</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(2).jpg" class="story-profile">
-                    <div class="story-note">حباب ساز mortal</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(3).jpg" class="story-profile">
-                    <div class="story-note">پاستیل مولنی ویتامین دکتربُن</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(4).jpg" class="story-profile">
-                    <div class="story-note">زخم و نوزده داستان دیگر</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(5).jpg" class="story-profile">
-                    <div class="story-note">برای گیتار تمرینی عالیه</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(6).jpg" class="story-profile">
-                    <div class="story-note">کوله پشتی خرگوشی</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(7).jpg" class="story-profile">
-                    <div class="story-note">با کیفیت ترین باکس SSD</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(8).jpg" class="story-profile">
-                    <div class="story-note">هدفون عالی ورزشی</div>
-                </div>
-                <div class="swiper-slide story">
-                    <img src="./assets/images/story/profile(9).jpg" class="story-profile">
-                    <div class="story-note">شیرینی خوری با المان های طبیعت</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(10).jpg" class="story-profile">
-                    <div class="story-note">ضروری برای تلویزیون</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(11).jpg" class="story-profile">
-                    <div class="story-note">خنک کننده گوشی واسه گیمرا!</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(12).jpg" class="story-profile">
-                    <div class="story-note">رژگونه سوشیا مدل دوآل فینیش</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(13).jpg" class="story-profile">
-                    <div class="story-note">با کیفیت ترین باکس</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(14).jpg" class="story-profile">
-                    <div class="story-note">زخم و نوزده داستان دیگر</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(15).jpg" class="story-profile">
-                    <div class="story-note">هدفون عالی ورزشی</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(16).jpg" class="story-profile">
-                    <div class="story-note">حباب ساز </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(17).jpg" class="story-profile">
-                    <div class="story-note">ضروری برای تلویزیون</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/images/story/profile(18).jpg" class="story-profile">
-                    <div class="story-note">رژگونه سوشیا مدل دوآل فینیش</div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+      <!-- swiper / story -->
+      <div class="swiper story">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(1).jpg"
+              class="story-profile"
+            />
+            <span class="time"> 14:00 </span>
+            <div class="story-note">مشاوره خرید کالای الکترونیک</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(2).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">حباب ساز mortal</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(3).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">پاستیل مولنی ویتامین دکتربُن</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(4).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">زخم و نوزده داستان دیگر</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(5).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">برای گیتار تمرینی عالیه</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(6).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">کوله پشتی خرگوشی</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(7).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">با کیفیت ترین باکس SSD</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(8).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">هدفون عالی ورزشی</div>
+          </div>
+          <div class="swiper-slide story">
+            <img
+              src="./assets/images/story/profile(9).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">شیرینی خوری با المان های طبیعت</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(10).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">ضروری برای تلویزیون</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(11).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">خنک کننده گوشی واسه گیمرا!</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(12).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">رژگونه سوشیا مدل دوآل فینیش</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(13).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">با کیفیت ترین باکس</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(14).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">زخم و نوزده داستان دیگر</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(15).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">هدفون عالی ورزشی</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(16).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">حباب ساز</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(17).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">ضروری برای تلویزیون</div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/story/profile(18).jpg"
+              class="story-profile"
+            />
+            <div class="story-note">رژگونه سوشیا مدل دوآل فینیش</div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
-        <!-- swiper / slider -->
-        <div class="swiper slider">
-            <div class="swiper-wrapper slider">
-                <div class="swiper-slide slider">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(1).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(2).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(3).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(4).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(5).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(6).webp" class="slider-img">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#" class="slider-link">
-                        <img src="./assets/images/slider/slider(7).webp" class="slider-img">
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+      <!-- swiper / slider -->
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(1).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(2).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(3).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(4).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(5).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(6).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="slider-link">
+              <img
+                src="./assets/images/slider/slider(7).webp"
+                class="slider-img"
+              />
+            </a>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
+      <div class="container">
         <!-- options -->
-        <div class="options-container">
-            
-            <div class="option">
-                <img src="./assets/images/theOption/option(1).png" class="option-img">
-                <a href="#" class="option-link">دیجی‌کالا جت</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(2).png" class="option-img">
-                <a href="#" class="option-link">دیجی‌پی</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(7).png" class="option-img">
-                <a href="#" class="option-link">حراج استایل</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(6).png" class="option-img">
-                <a href="#" class="option-link">حراج ماه رمضان</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(4).png" class="option-img">
-                <a href="#" class="option-link">موبایل کارکرده</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(3).png" class="option-img">
-                <a href="#" class="option-link">خرید چکی</a>
-            </div>
-            <div class="option">
-                <img src="./assets/images/theOption/option(5).png" class="option-img">
-                <a href="#" class="option-link">گیم نت</a>
-            </div>
-            <div class="option">
-                <img src="./assets/icons/ellipsis-horizental.svg" class="option-img icon">
-                <a href="#" class="option-link">بیشتر</a>
-            </div>
-            
-        
+        <div class="options">
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(1).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">دیجی‌کالا جت</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(2).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">دیجی‌پی</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(7).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">حراج استایل</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(6).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">حراج ماه رمضان</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(4).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">موبایل کارکرده</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(3).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">خرید چکی</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/images/theOption/option(5).png"
+              class="option-img"
+            />
+            <a href="#" class="option-link">گیم نت</a>
+          </div>
+          <div class="option">
+            <img
+              src="./assets/icons/ellipsis-horizental.svg"
+              class="option-img icon"
+            />
+            <a href="#" class="option-link">بیشتر</a>
+          </div>
         </div>
 
-
+        <!-- offers -->
+        <div class="amazing-offers"></div>
+      </div>
     </main>
-
-
-
-
 
     <footer></footer>
 
-<!-- story swiper js -->
+    <!-- story swiper js -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".story", {
+      var swiper = new Swiper(".story", {
         slidesPerView: 13,
         spaceBetween: 35,
-        centeredSlides: true,
+        // centeredSlides: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        }
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        );
+        breakpoints: {
+          350: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+          600: {
+            slidesPerView: 8,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 10,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 12,
+            spaceBetween: 30,
+          },
+        },
+      });
     </script>
 
-<!-- slider swiper js -->
+    <!-- slider swiper js -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".slider", {
-        spaceBetween: 30,
+      var swiper = new Swiper(".slider", {
         centeredSlides: true,
-        slidesPerView: 0.7,
+        slidesPerView: 1,
         loop: true,
         autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+          el: ".swiper-pagination",
+          clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            600: {
-                slidesPerView: 0.8,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 0.8,
-                spaceBetween: 40,
-            },
-            1024: {
-                slidesPerView: 0.7,
-                spaceBetween: 50,
-            },
+          600: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
         },
-        });
+      });
     </script>
-</body>
+  </body>
 </html>
