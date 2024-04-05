@@ -1,463 +1,586 @@
 /* fonts */
 @font-face {
-  font-family: "Vazir Bold";
-  src: url(../assets/fonts/font/Vazir-Bold.ttf),
-    url(../assets/fonts/font/Vazir-Bold.woff),
-    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Medium";
-  src: url(../assets/fonts/font/Vazir-Medium.ttf),
-    url(../assets/fonts/font/Vazir-Medium.woff),
-    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Light";
-  src: url(../assets/fonts/font/Vazir-Light.ttf),
-    url(../assets/fonts/font/Vazir-Light.woff),
-    url(../assets/fonts/digits/Vazir-Light-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Light-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Thin";
-  src: url(../assets/fonts/font/Vazir-Thin.ttf),
-    url(../assets/fonts/font/Vazir-Thin.ttf),
-    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
-}
-
-/* digits fonts */
-@font-face {
-  font-family: "Vazir Bold Digit";
-  src: url(../assets/fonts/digits/Vazir-Bold-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Bold-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Medium Digit";
-  src: url(../assets/fonts/digits/Vazir-Medium-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Medium-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Light Digit";
-  src: url(../assets/fonts/digits/Vazir-Light-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Light-FD-WOL.woff);
-}
-@font-face {
-  font-family: "Vazir Thin Digit";
-  src: url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf),
-    url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
-}
-
-/* colors:
-#404165 nav
-#4d525a bars
-#8e9197 search input
-
-#8f4fa0 story top left
-#d75ea7 story bottom right
-
-#ef394e digi red
-#d32f2f red-discount
-
-#0f0f0f black
-
-#5b5f67 location
-
-#393939 some bottoms/kinda gray
-
-#39ae00 amazing green
-
-#f9bc00 yellow
-
-#29c3d6 moshahede blue
-
-#941b80 digiplus
-
-#007295 digiclub right
-#35a6c8 digiclub left
-
-#a6a9ad grey text
-
-#f0f0f1 email input
-#e0e0e2 submit email
-
-#3c4b6d download app
-
-#fdecf5 span bg-color
-#e55ca7 span color 
-*/
-
-html {
-  line-height: 1.5;
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Vazir Light";
-  font-size: 0.8rem;
-}
-
-/* header & navbar */
-
-.header-img {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.header-img__mobile {
-  display: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* nav top */
-.nav {
-  border-bottom: 1px solid #c0c0c0;
-  box-shadow: 0px 1px 5px -2px #c0c0c0;
-  padding: 0 1rem;
-}
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.3rem;
-}
-.ntop-right {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-.right-logo {
-  padding-left: 1rem;
-  padding-top: 1rem;
-}
-.search {
-  background-color: #f0f0f1;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  width: 40rem;
-  display: flex;
-  align-items: center;
-}
-.search-icon {
-  background-color: transparent;
-  width: 1.5rem;
-  padding-left: 0.8rem;
-}
-.search-input {
-  border: none;
-  background-color: transparent;
-  font-family: "Vazir Light";
-  display: inline-block;
-  width: 100%;
-  outline: none;
-}
-.search-mobile {
-  background-color: #f0f0f1;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  width: 40rem;
-  display: flex;
-  align-items: center;
-  display: none;
-}
-.search-img {
-  aspect-ratio: 4.8;
-}
-.nav-left {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-.register {
-  border: 1px solid #c0c0c0;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  margin-left: 0.8rem;
-  cursor: pointer;
-}
-.register-icon {
-  width: 1.5rem;
-  padding-left: 0.3rem;
-}
-.register-btn {
-  text-decoration: none;
-  color: #0c0c0c;
-  font-family: "Vazir Medium";
-}
-.shop {
-  text-decoration: none;
-  display: inline-block;
-}
-.shop-icon {
-  margin: 0.5rem 0 0;
-  width: 1.5rem;
-  border-right: 1px solid #c0c0c0;
-  padding: 0 1.5rem 0 0.5rem;
-}
-
-/* nav bottom */
-.nav-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-}
-.menu-category {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-}
-.menu-category:hover {
-  border-bottom: 1px solid #ef394e;
-}
-.bars,
-.item-icon {
-  width: 1rem;
-}
-.menu-title {
-  color: #0f0f0f;
-  font-family: "Vazir Medium";
-}
-.menu-items {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-right: 1px solid #c0c0c0;
-  border-left: 1px solid #c0c0c0;
-  padding: 0 1rem;
-  height: 100%;
-}
-.menu-item {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  cursor: pointer;
-  height: 100%;
-}
-.menu-item:hover {
-  border-bottom: 2px solid #ef394e;
-}
-.item-link {
-  text-decoration: none;
-  display: block;
-  color: #424242;
-}
-.menu-items2 {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0;
-}
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 0.3rem;
-  cursor: pointer;
-}
-.location-icon {
-  width: 1rem;
-}
-.location-text {
-  color: #0f0f0f;
-}
-
-/* main */
-
-/* swiper-story */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-wrapper {
-  /* margin: 0 4.5rem; */
-  padding-top: 1.5rem;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-.story-profile {
-  border: 1px solid #8e8e8e;
-  border-radius: 5rem;
-  outline: 2px solid rgb(177, 46, 187);
-  outline-offset: 0.2rem;
-}
-.time {
-  font-family: "Vazir Medium Digit";
-  background-color: #fdecf5;
-  color: #e55ca7;
-  border-radius: 0.5rem;
-  font-size: 0.6rem;
-  padding: 0.2rem;
-  border: 1px solid #fff;
-}
-.story-note {
-  color: #0f0f0f;
-  padding-top: 1rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-/* swiper-slider */
-.slider-link {
-  display: block;
-}
-
-/* options */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2%;
-}
-.options {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 1rem 0;
-}
-.option {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-.option-link {
-  text-decoration: none;
-  font-family: "Vazir Medium";
-  color: #3c4b6d;
-  display: inline-block;
-  font-size: 0.7rem;
-}
-.option-img {
-  width: 3rem;
-}
-.option .icon {
-  background-color: #f0f0f1;
-  padding: 0.1rem;
-  border-radius: 5rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
-}
-
-/* responsive */
-@media (max-width: 1536px) {
-  .container {
-    max-width: 1536px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    font-family: "Vazir Bold";
+    src: url(../assets/fonts/font/Vazir-Bold.ttf),
+      url(../assets/fonts/font/Vazir-Bold.woff),
   }
-}
-@media (max-width: 1280px) {
-  /* nav top */
+  @font-face {
+    font-family: "Vazir Medium";
+    src: url(../assets/fonts/font/Vazir-Medium.ttf),
+      url(../assets/fonts/font/Vazir-Medium.woff),
+  }
+  @font-face {
+    font-family: "Vazir Light";
+    src: url(../assets/fonts/font/Vazir-Light.ttf),
+      url(../assets/fonts/font/Vazir-Light.woff),
+  }
+  @font-face {
+    font-family: "Vazir Thin";
+    src: url(../assets/fonts/font/Vazir-Thin.ttf),
+      url(../assets/fonts/font/Vazir-Thin.ttf),
+  }
+  
+  /* digits fonts */
+  @font-face {
+    font-family: "Vazir Bold Digit";
+    src: url(../assets/fonts/digits/Vazir-Bold-FD-WOL.ttf),
+      url(../assets/fonts/digits/Vazir-Bold-FD-WOL.woff);
+  }
+  @font-face {
+    font-family: "Vazir Medium Digit";
+    src: url(../assets/fonts/digits/Vazir-Medium-FD-WOL.ttf),
+      url(../assets/fonts/digits/Vazir-Medium-FD-WOL.woff);
+  }
+  @font-face {
+    font-family: "Vazir Light Digit";
+    src: url(../assets/fonts/digits/Vazir-Light-FD-WOL.ttf),
+      url(../assets/fonts/digits/Vazir-Light-FD-WOL.woff);
+  }
+  @font-face {
+    font-family: "Vazir Thin Digit";
+    src: url(../assets/fonts/digits/Vazir-Thin-FD-WOL.ttf),
+      url(../assets/fonts/digits/Vazir-Thin-FD-WOL.woff);
+  }
+  
+  /* colors:
+  #404165 nav
+  #4d525a bars
+  #8e9197 search input
+  
+  #8f4fa0 story top left
+  #d75ea7 story bottom right
+  
+  #ef394e digi red
+  #d32f2f red-discount
+  
+  #0f0f0f black
+  
+  #5b5f67 location
+  
+  #393939 some bottoms/kinda gray
+  
+  #39ae00 amazing green
+  
+  #f9bc00 yellow
+  
+  #29c3d6 moshahede blue
+  
+  #941b80 digiplus
+  
+  #007295 digiclub right
+  #35a6c8 digiclub left
+  
+  #a6a9ad grey text
+  
+  #f0f0f1 email input
+  #e0e0e2 submit email
+  
+  #3c4b6d download app
+  
+  #fdecf5 span bg-color
+  #e55ca7 span color 
+  */
+  
+  html {
+    line-height: 1.5;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazir Light";
+    font-size: 0.8rem;
+  }
+  
+  /* header & navbar */
+  
   .header-img {
-    display: none;
-  }
-  .header-img__mobile {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  .nav-left,
-  .ntop-right,
-  .search {
+  .header-img__mobile {
     display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* nav top */
+  .nav {
+    border-bottom: 1px solid #c0c0c0;
+    box-shadow: 0px 1px 5px -2px #c0c0c0;
+    padding: 0 1rem;
   }
   .nav-top {
-    position: -webkit-sticky;
-    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+  .ntop-right {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .right-logo {
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  .search {
+    background-color: #f0f0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+  }
+  .search-icon {
+    background-color: transparent;
+    width: 1.5rem;
+    padding-left: 0.8rem;
+  }
+  .search-input {
+    border: none;
+    background-color: transparent;
+    font-family: "Vazir Light";
+    display: inline-block;
+    width: 100%;
+    outline: none;
   }
   .search-mobile {
     background-color: #f0f0f1;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     width: 40rem;
-    display: block;
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 0.3rem 0;
-    position: relative;
-  }
-  .search-img {
-    position: absolute;
-    right: 6.8rem;
-    width: 7rem;
-  }
-
-  /* nav bottom */
-  .nav-bottom {
     display: none;
   }
+  .search-img {
+    aspect-ratio: 4.8;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .register {
+    border: 1px solid #c0c0c0;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+    cursor: pointer;
+  }
+  .register-icon {
+    width: 1.5rem;
+    padding-left: 0.3rem;
+  }
+  .register-btn {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-family: "Vazir Medium";
+  }
+  .shop {
+    text-decoration: none;
+    display: inline-block;
+  }
+  .shop-icon {
+    margin: 0.5rem 0 0;
+    width: 1.5rem;
+    border-right: 1px solid #c0c0c0;
+    padding: 0 1.5rem 0 0.5rem;
+  }
+  
+  /* nav bottom */
+  .nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+  }
+  .menu-category {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .menu-category:hover {
+    border-bottom: 1px solid #ef394e;
+  }
+  .bars,
+  .item-icon {
+    width: 1rem;
+  }
+  .menu-title {
+    color: #0f0f0f;
+    font-family: "Vazir Medium";
+  }
+  .menu-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    padding: 0 1rem;
+    height: 100%;
+  }
+  .menu-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    height: 100%;
+  }
+  .menu-item:hover {
+    border-bottom: 2px solid #ef394e;
+  }
+  .item-link {
+    text-decoration: none;
+    display: block;
+    color: #424242;
+  }
+  .menu-items2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+  .location-icon {
+    width: 1rem;
+  }
+  .location-text {
+    color: #0f0f0f;
+  }
+  
+  /* main */
+  
+  /* swiper-story */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper {
+    /* margin: 0 4.5rem; */
+    padding-top: 1.5rem;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  .story-profile {
+    border: 1px solid #8e8e8e;
+    border-radius: 5rem;
+    outline: 2px solid rgb(177, 46, 187);
+    outline-offset: 0.2rem;
+  }
+  .time {
+    font-family: "Vazir Medium Digit";
+    background-color: #fdecf5;
+    color: #e55ca7;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    border: 1px solid #fff;
+  }
+  .story-note {
+    color: #0f0f0f;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  /* swiper-slider */
+  .slider-link {
+    display: block;
+  }
+  
+  /* options */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  .options {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  .option-link {
+    text-decoration: none;
+    font-family: "Vazir Medium";
+    color: #3c4b6d;
+    display: inline-block;
+    font-size: 0.7rem;
+  }
+  .option-img {
+    width: 3rem;
+  }
+  .option .icon {
+    background-color: #f0f0f1;
+    padding: 0.1rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+  }
 
-  /* main */
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .options {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-  }
+  /* offers */
+  .amazing-offers{
+    background-color: #ef394e;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.2rem;
+    height: 18rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
 }
-@media (max-width: 1024px) {
-  /* main */
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
+  .amazing-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1rem;
+    width: 10rem;
+    height: 15rem;
   }
-  .options {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  .amazing-title__title{
+    object-fit: cover;
+    width: 50%;
+    padding-bottom: 1rem;
   }
+  .amazing-title__img{
+    object-fit: cover;
+    width: 70%;
+    padding-bottom: 0.5rem;
+  }
+  .amazing-more{
+    display: flex;
+    align-items: center;
+  }
+  .amazing-more__title{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Vazir Medium";
+  }
+  .amazing-more__icon{
+    width: 0.7rem;
+    padding-right: 0.2rem;
+  }
+  .offers{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .offer-cart{
+    background-color: #fff;
+    padding: 1rem;
+    width: 10rem;
+    height: 14rem;
+    cursor: pointer;
+  }
+  .first{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
-@media (max-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
+  .offer-item__img{
+    width: 100%;
+    object-fit: cover;
   }
-  .options {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  .offer-item__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+  .discount-percent{
+    background-color: #d32f2f;
+    color: #fff;
+    font-family: "Vazir Medium Digit";
+    width: 1.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media (max-width: 640px) {
-  .container {
-    max-width: 640px;
-    margin: 0 auto;
+  .item-price{
+    font-family: "Vazir Bold Digit";
+    color: #3f4064;
+    padding-bottom: 0.5rem;
   }
-}
-@media (max-width: 350px) {
-  .container {
-    max-width: 350px;
-    margin: 0 auto;
+  .real-price{
+    text-decoration: line-through;
+    color: #a6a9ad;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: end;
+    padding-left: 1.5rem;
   }
+  .last{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .more-offer__img{
+    width: 1rem;
+    border: 1px solid #29c3d6;
+    border-radius: 5rem;
+    padding: 1rem;
 }
+  .more-offers{
+    text-decoration: none;
+    font-family: "Vazir Medium";
+    color: #3f4064;
+    font-size: 1.1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  /* responsive */
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1536px;
+      margin: 0 auto;
+      padding: 0 5rem;
+    }
+  }
+  @media (max-width: 1280px) {
+    /* nav top */
+    .header-img {
+      display: none;
+    }
+    .header-img__mobile {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-left,
+    .ntop-right,
+    .search {
+      display: none;
+    }
+    .nav-top {
+      position: -webkit-sticky;
+      top: 0;
+    }
+    .search-mobile {
+      background-color: #f0f0f1;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      width: 40rem;
+      display: block;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0.3rem 0;
+      position: relative;
+    }
+    .search-img {
+      position: absolute;
+      right: 6.8rem;
+      width: 7rem;
+    }
+  
+    /* nav bottom */
+    .nav-bottom {
+      display: none;
+    }
+  
+    /* main */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto;
+    }
+  }
+  @media (max-width: 1024px) {
+    /* main */
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  @media (max-width: 640px) {
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 350px) {
+    .container {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
