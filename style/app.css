@@ -1661,7 +1661,20 @@ footer{
     align-items: center;
     gap: 0.2rem;
   }
+  .best-selling{
+    border: none;
+    padding: 0;
+  }
+  .best-selling__products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bs-cart{
+    padding: 0 0.5rem;
+  }
   .bs-mobile{
+    display: none;
+  }
+  .tablet{
     display: none;
   }
   .hottest {
@@ -1728,6 +1741,15 @@ footer{
   }
   .digiclub-items{
     width: 80%;
+  }
+  .best-selling__products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mob{
+    display: none;
+  }
+  .mobile{
+    display: none;
   }
 }
 
