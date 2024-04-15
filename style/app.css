@@ -176,10 +176,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  border-bottom: 2px solid transparent;
+  position: relative;
 }
 .menu-category:hover {
-  border-bottom: 1px solid #ef394e;
+  border-bottom: 2px solid #ef394e;
 }
+
 .bars,
 .item-icon {
   width: 1rem;
@@ -187,7 +190,57 @@ body {
 .menu-title {
   color: #0f0f0f;
   font-family: "Vazir Medium";
+  font-size: 0.9rem;
 }
+/* dropdown */
+.dropdown{
+  display: none;
+  z-index: 5;
+  position: absolute;
+  background-color: #e0e0e2;
+  top: 3.25rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 13rem;
+  height: 30rem;
+}
+
+.menu-category:hover .dropdown{
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+.drop-down{
+  margin: 0;
+  padding: 0;
+}
+.drop-down__item{
+  list-style-type: none;
+  width: 100%;
+  transition: background-color 0.2s, color 0.2s;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -ms-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+}
+.drop-down__item:hover{
+  background-color: #fff;
+}
+.dropdown-item__link{
+  text-decoration: none;
+  color: #0f0f0f;
+  font-family: "Vazir Medium";
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+}
+.dropdown-item__link:hover{
+  color: #d32f2f;
+}
+
 .menu-items {
   display: flex;
   align-items: center;
@@ -259,6 +312,9 @@ body {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+.swiper-slide {
+  height: unset !important;
 }
 .story-profile {
   border: 1px solid #8e8e8e;
@@ -343,32 +399,21 @@ body {
 .amazing-offers {
   background-color: #ef394e;
   border-radius: 1rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 0.2rem;
-  height: 18rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  overflow: hidden;
 }
+
 .amazing-title {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   cursor: pointer;
-  margin: 0 0.8rem 0 0.2rem;
-  width: 10rem;
 }
 .amazing-title__title {
-  object-fit: cover;
-  width: 50%;
+  width: 50% !important;
   padding-bottom: 1rem;
 }
 .amazing-title__img {
-  object-fit: cover;
-  width: 70%;
+  width: 60% !important;
   padding-bottom: 0.5rem;
 }
 .amazing-more {
@@ -382,22 +427,22 @@ body {
   font-family: "Vazir Medium";
 }
 .amazing-more__icon {
-  width: 0.7rem;
+  width: 0.7rem !important;
   padding-right: 0.2rem;
 }
 .offer-cart {
   background-color: #fff;
   padding: 1rem;
-  height: 100%;
   cursor: pointer;
+  height: 16rem;
 }
 .first {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 .offer-item__img {
-  width: 100%;
-  object-fit: cover;
+  aspect-ratio: 1;
+  padding-bottom: 1rem;
 }
 .offer-item__price {
   display: flex;
